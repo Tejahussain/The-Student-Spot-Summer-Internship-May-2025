@@ -1,181 +1,82 @@
-/* Reset */
-* {
+/* style.css for LearnMate Landing Page */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f2f5ff, #e0ecff);
+  color: #333;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* Body Styling */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #fbeaff, #e0f7fa);
-  color: #333;
-  min-height: 100vh;
-  padding: 20px;
+h1, h2, h3 {
+  font-weight: 700;
 }
 
-/* Main Container */
-.container {
-  max-width: 900px;
-  margin: auto;
-  background: white;
-  border-radius: 15px;
-  padding: 30px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1s ease-in-out;
-}
-
-/* Header */
-h1 {
-  font-size: 2.2em;
+.hero {
+  padding: 100px 0;
   text-align: center;
-  margin-bottom: 20px;
-  color: #5d1049;
+  background: linear-gradient(to right, #8ec5fc, #e0c3fc);
+  color: #fff;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
-/* Quote of the Day */
-#quote {
-  font-style: italic;
-  color: #6a1b9a;
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-/* Input Section */
-.input-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
-  justify-content: center;
-}
-
-input[type="text"],
-select {
-  padding: 10px;
-  font-size: 1em;
-  border: 2px solid #d1c4e9;
-  border-radius: 8px;
-  outline: none;
-  flex: 1;
-  min-width: 200px;
-}
-
-button {
-  padding: 10px 18px;
-  background: #7b1fa2;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-button:hover {
-  background: #4a0072;
-}
-
-/* Sections */
-.category-section {
-  margin-bottom: 30px;
-}
-
-.category-section h2 {
-  color: #4527a0;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  background: #f3e5f5;
-  padding: 12px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.hero .btn {
+  background-color: #ffffff;
+  color: #6c5ce7;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 10px 25px;
   transition: all 0.3s ease;
 }
 
-li.done {
-  background: #dcedc8;
-  text-decoration: line-through;
-  color: #757575;
+.hero .btn:hover {
+  background-color: #6c5ce7;
+  color: #fff;
 }
 
-.task-icon {
-  margin-right: 10px;
+.features .card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  border-radius: 16px;
 }
 
-.task-text {
-  flex: 1;
+.features .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Theme Toggle */
-.theme-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.card-title {
+  color: #6c5ce7;
+  font-size: 1.2rem;
 }
 
-body.dark {
-  background: #121212;
-  color: #eee;
-}
-
-body.dark .container {
-  background: #1f1f1f;
-}
-
-body.dark li {
-  background: #2e2e2e;
-  color: #ccc;
-}
-
-body.dark li.done {
-  background: #33691e;
-  color: #aaa;
-}
-
-/* Calendar Styling */
-#calendar {
-  margin-top: 30px;
+footer {
+  background: #f1f1f1;
   padding: 20px;
-  background: #e1bee7;
-  border-radius: 12px;
   text-align: center;
-  font-weight: bold;
-  font-size: 1.2em;
+  font-size: 14px;
+  color: #555;
 }
 
-/* Animations */
+section {
+  padding: 60px 0;
+}
+
+.btn-primary {
+  background-color: #6c5ce7;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #5a4bcf;
+}
+
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.7em;
-  }
-
-  .input-group {
-    flex-direction: column;
-  }
-
-  button {
-    width: 100%;
-  }
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
