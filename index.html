@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalluri Tejahussain | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => { AOS.init({ duration: 800 }); });
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#workshops">Workshops</a>
+    <a href="#projects">Projects</a>
+    <a href="#internships">Internships</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle">🌙</button>
+  </nav>
+
+  <header>
+    <img src="tej.jpg" alt="Profile Photo" class="profile-pic">
+    <h1 data-aos="fade-down">Kalluri Tejahussain</h1>
+    <p class="typewriter" id="typing"></p>
+  </header>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm Kalluri Tejahussain, a passionate 3rd-year B.Tech student in the stream of CSE (AI & ML) at CBIT Engineering College. I love exploring new technologies, designing, and continuously learning. I have strong skills in Python, AI, and Machine Learning. I enjoy reading, experimenting with code, and creating smart solutions.
+    </p>
+    <p>
+      Languages: Telugu, Hindi, English, Spanish (basic)<br>
+      Certifications: AI Internship @ SkillDzire, Various Workshops Attended
+    </p>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
+    <h2>Skills</h2>
+    <div class="skill"><h3>Python</h3><div class="skill-bar"><div class="fill" style="width: 90%"></div></div></div>
+    <div class="skill"><h3>Artificial Intelligence (AI)</h3><div class="skill-bar"><div class="fill" style="width: 85%"></div></div></div>
+    <div class="skill"><h3>Machine Learning (ML)</h3><div class="skill-bar"><div class="fill" style="width: 80%"></div></div></div>
+    <div class="skill"><h3>Generative AI (GenAI)</h3><div class="skill-bar"><div class="fill" style="width: 70%"></div></div></div>
+    <div class="skill"><h3>HTML</h3><div class="skill-bar"><div class="fill" style="width: 75%"></div></div></div>
+    <div class="skill"><h3>GitHub</h3><div class="skill-bar"><div class="fill" style="width: 80%"></div></div></div>
+    <div class="skill"><h3>Typewriting</h3><div class="skill-bar"><div class="fill" style="width: 85%"></div></div></div>
+  </section>
+
+  <section id="certifications" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <ul>
+      <li>AI Internship — SkillDzire</li>
+      <li>Git & GitHub — LetsUpgrade</li>
+      <li>PepsiCo Supply Chain — Internshala</li>
+      <li>Cloud Computing — Simplilearn</li>
+      <li>Basics of AI — HP Life</li>
+      <li>Basics of Python — Infosys Springboard</li>
+    </ul>
+  </section>
+
+  <section id="workshops" data-aos="fade-up">
+    <h2>Workshops Attended</h2>
+    <ul>
+      <li>SkillNation Workshops</li>
+      <li>StudentSpot Events</li>
+      <li>Internshala Webinars</li>
+      <li>TCS Sessions</li>
+      <li>GUVI Webinars</li>
+    </ul>
+  </section>
+
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>🤖 Festival Reminder Bot</h3>
+      <p>A Telegram bot that reminds users of upcoming festivals using Python and datetime automation.</p>
+      <button onclick="window.open('https://github.com/Tejahussain/Festival_Remainder_Bot','_blank')">View Code</button>
+    </div>
+    <div class="project">
+      <h3>📊 Student Performance Predictor</h3>
+      <p>Used linear regression to predict student grades based on hours studied using Python and scikit-learn.</p>
+      <button onclick="window.open('https://github.com/Tejahussain/student-performance','_blank')">View Code</button>
+    </div>
+    <div class="project">
+      <h3>💬 AI Chat Assistant</h3>
+      <p>A simple AI-powered chatbot using Python and OpenAI API, integrated into a web app.</p>
+      <button onclick="window.open('https://github.com/Tejahussain/ai-chatbot','_blank')">View Code</button>
+    </div>
+  </section>
+
+  <section id="internships" data-aos="fade-up">
+    <h2>Internships</h2>
+    <ul>
+      <li>AI Internship — SkillDzire (May–June)</li>
+      <li>Python Programming — MotionCut (June)</li>
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:tejahussain9@gmail.com">tejahussain9@gmail.com</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Tejahussain279" target="_blank">Tejahussain279</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/tejahussain-teja" target="_blank">tejahussain-teja</a></p>
+    <p><strong>Resume:</strong> <button disabled title="Upload resume link soon">📄 Coming Soon</button></p>
+  </section>
+
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      btn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+
+    const texts = [ "CSE (AI & ML) Student","Python Developer", "AIML Enthusiast"];
+    let count = 0, i = 0, current = '', letter = '';
+    (function type() {
+      if (count === texts.length) count = 0;
+      current = texts[count];
+      letter = current.slice(0, ++i);
+      document.getElementById("typing").textContent = letter;
+      if (letter.length === current.length) {
+        count++;
+        i = 0;
+        setTimeout(type, 2000);
+      } else {
+        setTimeout(type, 100);
+      }
+    })();
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+  <script>
+    VANTA.BIRDS({
+      el: "body",
+      backgroundColor: 0xf4faff,
+      color1: 0x007acc,
+      size: 1.20,
+      quantity: 3
+    });
+  </script>
+</body>
+</html>
