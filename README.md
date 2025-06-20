@@ -46,6 +46,5 @@ CSE (AI & ML) – CBIT Engineering College
 
 ---
 
-## 📎 Live Link (if deployed)
-[Click here to view my portfolio](https://your-portfolio-link.netlify.app)
+## 📎 Live Link:https://tejahussain.github.io/The-Student-Spot-Summer-Internship-May-2025/
 
