@@ -38,13 +38,6 @@ Create a personal portfolio website using **HTML**, **CSS**, and **basic JavaScr
 **Kalluri Tejahussain**  
 CSE (AI & ML) – CBIT Engineering College
 
----
-
-## 📸 Preview
-
-![Portfolio Screenshot](screenshot.png) *(Optional: Upload screenshot image and rename as screenshot.png)*
-
----
 
 ## 📎 Live Link:https://tejahussain.github.io/The-Student-Spot-Summer-Internship-May-2025/
 
